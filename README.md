@@ -1,57 +1,65 @@
-=========== Buscador de Livros ===========
+# =========== Buscador de Livros ===========
+
 Aplicação de consulta de livros desenvolvida em Java com Spring Boot que consome a API Gutendex e armazena os dados em um banco PostgreSQL.
 
-🚀 Funcionalidades
-🔍 Buscar livros por título
+# 🚀 Funcionalidades
 
-📖 Listar todos os livros registrados
+- 🔍 Buscar livros por título
 
-✍️ Listar todos os autores registrados
+- 📖 Listar todos os livros registrados
 
-🎂 Listar autores vivos em um determinado ano
+- ✍️ Listar todos os autores registrados
 
-🌍 Listar livros por idioma (es, en, fr, pt)
+- 🎂 Listar autores vivos em um determinado ano
 
-💾 Armazenamento em banco de dados PostgreSQL
+- 🌍 Listar livros por idioma (es, en, fr, pt)
 
-🛠️ Tecnologias Utilizadas
-Java 17
+- 💾 Armazenamento em banco de dados PostgreSQL
 
-Spring Boot 3.2.0
+## 🛠️ Tecnologias Utilizadas
 
-Spring Data JPA
+- Java 17
 
-PostgreSQL
+- Spring Boot 3.2.0
 
-RestTemplate (para consumo da API Gutendex)
+- Spring Data JPA
 
-⚙️ Configuração
-Pré-requisitos
-Java 17 JDK instalado
+- PostgreSQL
 
-PostgreSQL instalado e rodando
+- RestTemplate (para consumo da API Gutendex)
 
-Maven instalado
+## ⚙️ Configuração
+**======== Pré-requisitos ========** 
+- Java 17 JDK instalado
 
-Instalação
-Clone o repositório:
+- PostgreSQL instalado e rodando
 
-bash
+- Maven instalado
+
+## ======== Instalação ========
+
+**Clone o repositório:**
+
+```bash
 git clone https://github.com/seu-usuario/busca-livro-app.git
-Configure o banco de dados:
+```
+
+**Configure o banco de dados:**
 
 Crie um banco chamado bookdb no PostgreSQL
 
 Atualize as credenciais no arquivo src/main/resources/application.properties
 
-Execute a aplicação:
+# Execute a aplicação:
 
-bash
+```bash
 mvn spring-boot:run
-🖥️ Como Usar
+```
+
+## 🖥️ Como Usar
 Ao iniciar a aplicação, um menu interativo será exibido no terminal:
 
-text
+```bash
 Escolha o número da sua opção:
 1- Buscar livro pelo titulo
 2- Listar livros registrados
@@ -59,28 +67,34 @@ Escolha o número da sua opção:
 4- Listar autores vivos em um determinado ano
 5- Listar livros em um determinado idioma
 6- Sair
-Exemplo de Uso
+```
+
+### Exemplo de Uso
+
 Buscar livro por título:
 
 Digite 1 e o título do livro
 
-Exemplo de saída:
+**Exemplo de saída:**
 
-text
+```bash
 -----LIVRO-----
 Titulo: Dom Quixote
 Autor: Miguel de Cervantes Saavedra
 Idioma: es
 Número de downloads: 5000
 ----------------------
-Listar livros por idioma:
+```
+
+**Listar livros por idioma:**
 
 Digite 5 e o código do idioma (ex: en)
 
 A aplicação retornará todos os livros em inglês
 
-📦 Estrutura do Projeto
-text
+## 📦 Estrutura do Projeto
+
+```
 src/
 ├── main/
 │   ├── java/
@@ -93,5 +107,7 @@ src/
 │   │               └── BuscaLivroAppApplication.java
 │   └── resources/
 │       └── application.properties    # Configurações
-📄 Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+```
+
+## 📄 Licença
+- Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
